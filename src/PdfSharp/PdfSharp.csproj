@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+	<TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
     <DefineConstants>$(DefineConstants);CORE;CORE_WITH_GDI</DefineConstants>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
@@ -13,7 +13,7 @@
     <GenerateResourceUsePreserializedResources>true</GenerateResourceUsePreserializedResources>
     <PackageProjectUrl>https://github.com/LionelVallet/PDFsharp</PackageProjectUrl>
     <VersionSuffix Condition="'$(VersionSuffix)' == ''">0</VersionSuffix>
-    <Version>1.51.5185.2</Version>
+    <Version>1.51.5185.3</Version>
     <Authors>empira Software GmbH, Lionel Vallet</Authors>
     <PackageId>PDFSharp.NetStandard2</PackageId>
     <PackageTags>PDFSharp, NET, Standard, Core, PDF, Creation</PackageTags>
@@ -409,7 +409,7 @@ This is the .NET Standard version of the PDFsharp PDF Core package. See Project 
     <Folder Include="SharpZipLib\SharpZip\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
-    <PackageReference Include="System.Resources.Extensions" Version="7.0.0" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.4" />
+    <PackageReference Include="System.Resources.Extensions" Version="8.0.0" />
   </ItemGroup>
 </Project>
